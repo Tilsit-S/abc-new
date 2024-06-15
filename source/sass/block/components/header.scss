@@ -1,8 +1,24 @@
 .header {
     overflow: hidden;
 
-    .container {
-        background-color: aqua;
+    &__contacts-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    &__dashboard {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    &__search-pannel {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    &__navigation {
+        display: flex;
+        flex-flow: row nowrap;
     }
 }
 
