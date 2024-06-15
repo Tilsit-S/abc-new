@@ -1,0 +1,9 @@
+@import "normalize", "fonts", "variables", "mixins", "global", "animation";
+
+// components
+
+@import "block/components/header.scss", "block/components/footer.scss";
+
+// subcomponents
+
+//@import "block/subcomponents/card.scss";

@@ -1,0 +1,10 @@
+.header {
+    overflow: hidden;
+
+    .container {
+        background-color: aqua;
+    }
+}
+
+@media (max-width: $tablet-width) {
+}
