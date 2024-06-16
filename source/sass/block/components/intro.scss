@@ -5,30 +5,94 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        margin-left: 370px;
+        margin-left: 372px;
     }
 
     &__text-block {
         width: 560px;
         flex-shrink: 0;
+        margin-right: 40px;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 48px;
+        padding-top: 73px;
+        color: $black-text;
+        margin-bottom: 25px;
+    }
+
+    &__sub-title {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 39px;
+    }
+
+    &__buttons-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+
+    &__change-button {
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        width: 210px;
+        padding: 16px 3px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $white;
+        background-color: #4269F5;
+        border-radius: 8px;
+        margin-right: 12px;
+    }
+
+    &__account {
+        position: relative;
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        width: 140px;
+        padding: 16px 3px 16px 36px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $black-text;
+        background-color: #F2F3F5;
+        border-radius: 8px;
+
+        &::before {
+            position: absolute;
+            top: 16px;
+            left: 28px;
+            content: "";
+            display: flex;
+            width: 24px;
+            height: 24px;
+            background-image: url('../img/main/intro/user.svg');
+            background-size: contain;
+        }
+    }
+
+    &__slide {
+        width: 692px;
+    }
+
+    &__slide-card-list {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 9px;
     }
 
     .slick-slider{
         position: relative;
         height: 100%;
         margin: 0;
-
-        @media (max-width: 1400px) {
-            margin: 0 100px;
-        }
-
-        @media (max-width: 1200px) {
-            margin: 0 50px;
-        }
-
-        @media (max-width: 1000px) {
-            margin: 0;
-        }
     }
 
     /* Слайдер запущен */
@@ -70,16 +134,36 @@
     }
 
     /* dots */
-
     .slick-dots {
         display: flex;
+        flex-shrink: 0;
         flex-flow: row nowrap;
+        justify-content: space-between;
+        width: 94px;
+        
+    }
+
+    .slick-dots li button {
+        display: block;
+        width: 6px;
+        height: 6px;
+        font-size: 0;
+        background: #E3E7F0;
+        border: none;
+        border-radius: 1px;
+    }
+
+    .slick-dots .slick-active button {
+        width: 6px;
+        height: 6px;
+        background: $black;
     }
 
     /* Ограничивающая оболочка */
     .slick-list {
         overflow: hidden;
         margin: 0 auto;
+        margin-bottom: 20px;
     }
 
     /* Лента слайдов */
@@ -87,7 +171,7 @@
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        margin-bottom: 90px;;
+        margin-bottom: 90px;
     }
 
     /* Слайд */
@@ -96,7 +180,7 @@
         height: auto;
 
         &:not(:first-child) {
-            margin-left: 52px;
+            margin-left: 15px;
         }
         
         img {

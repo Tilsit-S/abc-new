@@ -5,7 +5,7 @@ $(document).ready(function(){
         variableWidth: true,
         adaptiveHeight: true,
         infinite: false,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         responsive: [
             {
