@@ -8,12 +8,19 @@
         font-size: 32px;
         line-height: 44px;
         color: $black-text;
+        margin-bottom: 60px;
     }
 
     &__content {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
+        margin-bottom: 78px;
+    }
+
+    &__text-block {
+        width: 560px;
+        padding-left: 13px;
     }
 
     &__list {
@@ -22,49 +29,60 @@
     }
 
     &__item {
-        padding: 24px 2px;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-
-        &:last-child {
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        }
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 0px;
 
         &:not(:last-child) {
-            margin-bottom: 1px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #EFEFEF;
         }
     }
 
     &__item-question {
         position: relative;
+        display: block;
         width: 100%;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 145%;
-        color: rgba(0, 0, 0, 0.85);
-        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        color: $black-text;
+        margin-bottom: 32px;
 
-        &::before {
+        &::after {
             position: absolute;
-            top: 16px;
-            right: 43px;
+            top: 0px;
+            right: 11px;
             content: "";
             display: block;
-            width: 16px;
-            height: 2px;
-            border-radius: 14px;
-            background: rgba(0, 0, 0, 0.85);
+            width: 28px;
+            height: 28px;
+            border-radius: 10px;
+            background-image: url("../img/main/features/arrow.svg");
+            background-size: 28px 28px;
+            background-position: center;
+            transform: rotate(180deg);
         }
     }
 
     &__item-answer {
         display: none;
-        padding-right: 75px;
+        padding-right: 35px;
         
         p {
+            padding-right: 20px;
             font-weight: 400;
-            font-size: 24px;
-            line-height: 145%;
-            color: rgba(0, 0, 0, 0.5);
+            font-size: 16px;
+            line-height: 26px;
+            color: $gray-text;
+
+            &:nth-child(1) {
+                margin-bottom: 16px;
+            }
+
+            &:nth-child(2) {
+                margin-bottom: 23px;
+            }
         }
     }
 
@@ -76,29 +94,60 @@
 
     &__item-checkbox:checked ~ .features__item-question {
 
-        &::before {
-            position: absolute;
-            top: 16px;
-            right: 43px;
-            content: "";
-            display: block;
-            width: 16px;
-            height: 2px;
-            border-radius: 14px;
-            background: rgba(0, 0, 0, 0.85);
-        }
-
         &::after {
-            position: absolute;
-            top: 16px;
-            right: 43px;
-            content: "";
-            display: block;
-            width: 16px;
-            height: 2px;
-            border-radius: 14px;
-            background: rgba(0, 0, 0, 0.85);
-            transform: rotate(90deg);
+            transform: rotate(0deg);
         }
+    }
+
+    &__quality {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    &__quality-image {
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__quality-info {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 560px;
+        padding: 88px 0;
+    }
+
+    &__quality-title {
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 23px;
+    }
+
+    &__quality-text {
+        font-size: 16px;
+        line-height: 26px;
+        padding-right: 50px;
+        margin-bottom: 24px;
+    }
+
+    &__quality-link {
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        width: 132px;
+        padding: 16px 3px;
+        background: #4269F5;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $white;
+        text-align: center;
     }
 }
