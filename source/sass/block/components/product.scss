@@ -1,0 +1,100 @@
+.product {
+    overflow: hidden;
+    margin-bottom: 80px;
+
+    &__title {
+        width: 440px;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 44px;
+        color: $black-text;
+        margin-bottom: 40px;
+    }
+    
+    &__tabs {
+        display: flex;
+        justify-content: flex-start;
+        color: #44454B;
+        text-align: center;
+        margin-bottom: 40px;
+    }   
+        
+    &__tabs-item {
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        background: #F2F3F5;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        
+        &:not(:last-child) {
+            margin-right: 13px;
+        }
+        
+        &.active {
+            background: #090A12;
+            color: $white;
+        }
+    }
+    
+    &__content {
+    }
+
+    &__content-item {
+        position: absolute;
+        display: none;
+        //left: -5000px;
+        
+        &.active {
+            position: relative;
+            display: flex;
+            //left: 0;
+        }
+    }
+
+    /* 1-st tab content */
+    &__products-list {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 39px 40px;
+    }
+
+    .item-card {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &__image {
+            margin-bottom: 14px;
+        }
+
+        &__description {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+
+    /* 2-d tab content */
+    &__design-list {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 39px 40px;
+    }
+
+    .design-item {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 560px;
+        padding: 40px;
+    }
+}

@@ -1,0 +1,27 @@
+.clients {
+    overflow: hidden;
+    margin-bottom: 80px;
+
+    &__trust {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 23px;
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    &__item-image {
+        display: flex;
+        width: 160px;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+}
