@@ -1,13 +1,13 @@
 .achievements {
     overflow: hidden;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
 
     &__intro {
         position: relative;
         overflow: hidden;
         padding: 101px 0 100px 61px;
         background: #66DBBD;
-        background-image: url("../img/main/variety/bg.png");
+        background-image: url("../img/main/achievements/bg.png");
         background-size: 1160px 360px;
         background-repeat: no-repeat;
         color: $white;
@@ -64,5 +64,84 @@
         font-weight: 800;
         font-size: 32px;
         line-height: 44px;
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        position: relative;
+        width: 360px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 93px 5px 5px 0px;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        &:nth-child(1) {
+            
+            &::before {
+                position: absolute;
+                top: 40px;
+                left: 1px;
+                content: "";
+                background-image: url("../img/main/achievements/flex.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 60px;
+                height: 60px;
+            }
+        }
+        &:nth-child(2) {
+
+            &::before {
+                position: absolute;
+                top: 40px;
+                left: 1px;
+                content: "";
+                background-image: url("../img/main/achievements/clock.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 60px;
+                height: 60px;
+            }
+        }
+        &:nth-child(3) {
+
+            &::before {
+                position: absolute;
+                top: 40px;
+                left: 1px;
+                content: "";
+                background-image: url("../img/main/achievements/team.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        
+    }
+
+    &__item-title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 24px;
+    }
+
+    &__item-text {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 5px;
     }
 }

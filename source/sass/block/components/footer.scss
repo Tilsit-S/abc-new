@@ -1,6 +1,135 @@
 .footer {
     overflow: hidden;
-}
 
-@media (max-width: $tablet-width) {
+    .contacts {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #EFEFEF;
+
+        &__title {
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 34px;
+            margin-bottom: 8px;
+        }
+
+        &__sub-title {
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 40px;
+        }
+
+        &__contact-list {
+            display: flex;
+            flex-flow: column nowrap;
+            margin-bottom: 16px;
+        }
+
+        &__contact-item {
+
+            p {
+                font-size: 16px;
+                line-height: 26px;
+            }
+
+            &:nth-child(1) {
+
+                p {
+                    font-weight: 700;
+                }
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+        }
+
+        &__social {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-start;
+        }
+
+        &__social-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            background: #4269F5;
+            border-radius: 50%;
+
+            &:not(:last-child) {
+                margin-right: 16px;
+            }
+        }
+
+        &__certificates {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            width: 280px;
+        }
+
+        &__certificate {
+            display: flex;
+            flex-shrink: 0;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+
+        }
+    }
+
+    &__site-map {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding-bottom: 40px;
+        margin-bottom: 39px;
+        border-bottom: 1px solid #EFEFEF;
+    }
+
+    &__solution,
+    &__industry,
+    &__design,
+    &__about-us {
+        width: 260px;
+    }
+
+    &__solution-title,
+    &__industry-title,
+    &__design-title,
+    &__about-us-title {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        color: #898D96;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 24px;
+    }
+
+    &__solution-item,
+    &__industry-item,
+    &__design-item,
+    &__about-us-item {
+        font-size: 16px;
+        line-height: 26px;
+        color: $black-text;
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__copyright {
+        font-size: 16px;
+        line-height: 26px;
+        color: #898D96;
+    }
 }
