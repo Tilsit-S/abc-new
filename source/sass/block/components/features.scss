@@ -8,14 +8,14 @@
         font-size: 32px;
         line-height: 44px;
         color: $black-text;
-        margin-bottom: 60px;
+        margin-bottom: 38px;
     }
 
     &__content {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        margin-bottom: 78px;
+        margin-bottom: 99px;
     }
 
     &__text-block {
@@ -32,10 +32,11 @@
         display: flex;
         flex-flow: column nowrap;
         padding: 0px;
+        border-bottom: 1px solid #EFEFEF;
 
-        &:not(:last-child) {
-            margin-bottom: 25px;
-            border-bottom: 1px solid #EFEFEF;
+        &:nth-child(2) {
+            padding-bottom: 0px;
+            margin-bottom: 0px;
         }
     }
 
@@ -47,11 +48,11 @@
         font-size: 20px;
         line-height: 28px;
         color: $black-text;
-        margin-bottom: 32px;
+        padding: 23px 0;
 
         &::after {
             position: absolute;
-            top: 0px;
+            top: 22px;
             right: 11px;
             content: "";
             display: block;
@@ -67,7 +68,7 @@
 
     &__item-answer {
         display: none;
-        padding-right: 35px;
+        padding: 8px 35px 23px 0;
         
         p {
             padding-right: 20px;
@@ -78,10 +79,6 @@
 
             &:nth-child(1) {
                 margin-bottom: 16px;
-            }
-
-            &:nth-child(2) {
-                margin-bottom: 23px;
             }
         }
     }
@@ -97,6 +94,14 @@
         &::after {
             transform: rotate(0deg);
         }
+    }
+
+    &__video {
+        overflow: hidden;
+        width: 560px;
+        height: 372px;
+        margin-top: 22px;
+        border-radius: 4px;
     }
 
     &__quality {
