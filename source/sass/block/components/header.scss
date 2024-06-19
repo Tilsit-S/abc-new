@@ -1,6 +1,6 @@
 .header {
     overflow: hidden;
-    margin-bottom: 63px;
+    margin-bottom: 44px;
     border-bottom: 1px solid #EFEFEF;
 
     &__wrapper {
@@ -90,6 +90,10 @@
 
     &__logo {
         margin-right: 11px;
+    }
+
+    &__not-main-logo {
+        line-height: 0;
     }
 
     &__catalog-link {
