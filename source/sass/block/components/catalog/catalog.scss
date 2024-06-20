@@ -55,6 +55,98 @@
         font-size: 48px;
         line-height: 60px;
         color: $black-text;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
+    }
+
+    &__price {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        height: 800px;
+        gap: 0 38px;
+    }
+
+    .price {
+
+        &__product {
+            display: flex;
+            width: 560px;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            margin-bottom: 60px;
+        }
+
+        &__image {
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            width: 101px;
+            height: 101px;
+            border-radius: 4px;
+            margin-right: 23px;
+        }
+
+        &__list {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+        }
+
+        &__item {
+            
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+
+            a {
+                font-size: 16px;
+                line-height: 26px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &__item-title {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #4269F5;
+        }
+
+
+
+
+
+        &__hidden-content {
+            display: none;
+            overflow: hidden;
+            position: relative;
+        }
+        &__read-more-checker {
+            opacity: 0;
+            position: absolute;
+        }
+        &__read-more-checker:checked ~ .price__hidden-content {
+            display: flex;
+        }
+        &__read-more-checker ~ .price__read-more-button:before {
+            content: 'Ещё';
+        }
+        &__read-more-checker:checked ~ .price__read-more-button:before {
+            content: 'Скрыть';
+        }
+        &__read-more-button {
+            cursor: pointer;
+            display: block;
+            padding: 5px;
+            color: #777;
+            border: none;
+        }
     }
 }
