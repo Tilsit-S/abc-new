@@ -19,7 +19,67 @@
         width: 760px;
         font-size: 20px;
         line-height: 32px;
-        margin-bottom: 40px;
+        margin-bottom: 39px;
+    }
+
+    &__filter-block {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        margin-bottom: 58px;
+    }
+
+    &__filter-button {
+        position: relative;
+        display: block;
+        padding: 10px 10px 10px 29px;
+        border: none;
+        background: transparent;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        color: $black-text;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-right: 48px;
+
+        &::before {
+            position: absolute;
+            top: 9px;
+            left: 0;
+            content: "";
+            width: 16px;
+            height: 16px;
+            background-image: url("../img/category/sorting.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__filter-link {
+        position: relative;
+        display: block;
+        padding: 10px 10px 10px 29px;
+        border: none;
+        background: transparent;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        color: $black-text;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &::before {
+            position: absolute;
+            top: 9px;
+            left: 0;
+            content: "";
+            width: 16px;
+            height: 16px;
+            background-image: url("../img/category/filter.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
 
     &__tabs {
@@ -27,7 +87,7 @@
         justify-content: flex-start;
         color: #44454B;
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
     }   
         
     &__tabs-item {
@@ -45,7 +105,7 @@
         cursor: pointer;
         
         &:not(:last-child) {
-            margin-right: 13px;
+            margin-right: 9px;
         }
         
         &.active {
@@ -60,11 +120,13 @@
     &__content-item {
         position: absolute;
         display: none;
+        gap: 40px;
         //left: -5000px;
         
         &.active {
             position: relative;
             display: flex;
+            flex-flow: row wrap;
             //left: 0;
         }
     }
