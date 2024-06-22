@@ -47,6 +47,7 @@
         line-height: 22px;
         color: $white;
         margin-right: 10px;
+        cursor: default;
     }
 
     &__cam-link {
@@ -91,6 +92,7 @@
         line-height: 22px;
         color: $gray-text;
         margin-right: 10px;
+        cursor: default;
 
         &::before {
             position: absolute;
@@ -113,6 +115,7 @@
         font-size: 14px;
         line-height: 22px;
         color: $gray-text;
+        cursor: default;
     }
 
     &__text-block {
@@ -146,7 +149,8 @@
     }
 
     &__basket-link {
-        display: flex;
+        display: inline-flex;
+        flex-shrink: 0;
         justify-content: center;
         align-items: center;
         width: 48px;
@@ -161,11 +165,10 @@
     }
 
     &__instant-buy {
-        display: flex;
+        display: inline-flex;
         justify-content: center;
         align-items: center;
-        flex-shrink: 0;
-        width: 248px;
+        width: 100%;
         padding: 12px 5px;
         text-align: center;
         background: rgba(43, 88, 250, 0.1);
