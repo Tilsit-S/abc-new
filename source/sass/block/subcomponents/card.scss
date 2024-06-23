@@ -14,9 +14,6 @@
         justify-content: center;
         align-items: center;
         background: #EFEFEF;
-        //background-image: url("../img/category/card/black-tubus.png");
-        //background-size: contain;
-        //background-position: 40px 0px;
         
 
         img {
@@ -24,7 +21,7 @@
             transition: 0.5s;
 
             &:hover {
-                transform: scale(1.2);
+                transform: scale(1.7);
             }
         }
         
@@ -62,6 +59,7 @@
         background-size: 22px 22px;
         background-position: center;
         background-repeat: no-repeat;
+        box-shadow: 2px 2px 12px 0 rgba(0, 0, 0, 0.08);
 
         &:hover {
             opacity: 1;
@@ -127,6 +125,8 @@
         line-height: 26px;
         color: $black-text;
         margin-bottom: 13px;
+        height: 78px;
+        overflow: hidden;
     }
 
     &__price {
