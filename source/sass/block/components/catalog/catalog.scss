@@ -164,21 +164,5 @@
             border: none;
             text-decoration: underline;
         }
-        
-        &__read-more-text:checked ~ .price__hidden-text {
-            display: flex;
-        }
-
-        &__read-more-text ~ .priceread-more-text-button:before {
-            content: 'ещё >';
-            font-size: 16px;
-            line-height: 26px;
-        }
-
-        &__read-more-text:checked ~ .price__read-more-text-button:before {
-            content: 'Скрыть <';
-            font-size: 16px;
-            line-height: 26px;
-        }
     }
 }
