@@ -126,9 +126,28 @@
                                     </div>
                                     <div class="card__button-wrapper">
                                         <a href="#" class="card__basket-link"></a>
-                                        <a href="#" class="card__instant-buy">Купить в 1 клик</a>
+                                        <button class="card__instant-buy instant-buy-1">Купить в 1 клик</button>
                                     </div>
                                 </div>
+
+                                <div class="card__modal modal modal-1">
+                                    <div class="modal__wrapper">
+                                        <div class="modal__content">
+                                            <button class="modal__close"></button>
+                                            <h4 class="modal__title">Положить в корзину</h4>
+                                            <div class="modal__product-info">
+                                                <div class="modal__product-image">
+                                                    <img src="img/category/card/modal-card-picture.png" width="120px" height="120px" alt="tubus-picture">
+                                                </div>
+                                                <div class="modal__product-description">
+                                                    <p class="modal__product-article">ББД-56700067</p>
+                                                    <p class="modal__product-description-text">Тубус пенал трехкомпонентный с комбинированной крышкой, размер 105 × 190 мм, картонный, ещё информаци</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 
                             </div>
                             <div class="card">
@@ -687,8 +706,8 @@
                     </ul>
                     <div class="faq__feedback feedback">
                         <h4 class="feedback__title">Не нашли ответ на свой вопрос? Напишите нам</h4>
-                        <textarea name="" id="" class="feedback__name-field" placeholder="Ваше имя"></textarea>
-                        <textarea name="" id="" class="feedback__question-field" placeholder="Ваш вопрос"></textarea>
+                        <textarea class="feedback__name-field" placeholder="Ваше имя" rows="1"></textarea>
+                        <textarea class="feedback__question-field" placeholder="Ваш вопрос" rows="5"></textarea>
                         <div class="feedback__privacy">
                             <input type="checkbox" class="feedback__checkbox">
                             <p class="feedback__privacy-text">Соглашаюсь с <a href="#" class="feedback__link">Политикой обработки данных</a></p>
@@ -846,6 +865,7 @@
     </footer>
 
     <script src="js/categoryTabs.js"></script>
+    <script src="js/modal.js"></script>
     
 </body>
 </html>

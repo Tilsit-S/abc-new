@@ -1,6 +1,6 @@
 .category {
     overflow: hidden;
-    margin-bottom: 54px;
+    margin-bottom: 29px;
 
     &__link-wrapper {
         display: flex;
@@ -126,13 +126,11 @@
         position: absolute;
         display: none;
         gap: 40px;
-        //left: -5000px;
         
         &.active {
             position: relative;
             display: flex;
             flex-flow: row wrap;
-            //left: 0;
         }
     }
 
@@ -152,7 +150,7 @@
         justify-content: flex-start;
         width: 360px;
         background: #C4D1D0;
-        border-radius: 4px;
+        border-radius: 20px;
     }
 
     &__inspiration-wrapper {
