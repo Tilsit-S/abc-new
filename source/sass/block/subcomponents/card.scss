@@ -210,7 +210,8 @@
 
         &__content {
             position: absolute;
-            top: 227px;
+            //top: 227px;
+            top: 0;
             left: 682px;
             display: flex;
             flex-flow: column nowrap;
@@ -226,13 +227,14 @@
             font-weight: 800;
             font-size: 28px;
             line-height: 36px;
-            margin: 0 0 10px 0;
+            margin: 0 0 24px 0;
         }
 
         &__product-info {
             display: flex;
             flex-flow: row nowrap;
             justify-content: flex-start;
+            margin-bottom: 24px;
         }
 
         &__product-image {
@@ -244,7 +246,24 @@
             width: 120px;
             height: 120px;
             border-radius: 4px;
-            margin-right: 10px;
+            margin-right: 24px;
+        }
+
+        &__product-article {
+            font-size: 14px;
+            line-height: 22px;
+            color: #898D96;
+            margin-bottom: 8px;
+        }
+
+        &__product-description-text {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            font-size: 16px;
+            line-height: 26px;
+            color: $black-text;
         }
 
         &__button-wrapper {
@@ -292,6 +311,95 @@
                 opacity: 0.8;
                 transition: all 200ms ease;
             }
+        }
+
+        &__select-field {
+            margin-bottom: 16px;
+        }
+
+        .select-field,
+        .diameter-field {
+            position: relative;
+            width: 100%;
+            border-radius: 8px;
+            padding: 11px 20px;
+            background: #F2F3F5;
+            font-size: 16px;
+            line-height: 26px;
+            color: $black-text;
+
+            &__list {
+                position: absolute;
+                top: 40px;
+                left: 0;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: flex-start;
+                width: 100%;
+                border-radius: 8px;
+                padding: 11px 20px;
+                background: #F2F3F5;
+                font-size: 16px;
+                line-height: 26px;
+                color: $black-text;
+            }
+
+            &__item {
+                padding: 11px 20px 11px 1px;
+            }
+        }
+
+        .diameter-field {
+            margin-bottom: 16px;
+        }
+
+        .counter {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 4px;
+            background: #F2F3F5;
+            border-radius: 8px;
+            margin-bottom: 20px;
+    
+            &__button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+                width: 40px;
+                height: 40px;
+                border: none;
+                border-radius: 4px;
+                background: rgba(43, 88, 250, 0.12);
+                user-select: none;
+            }
+    
+            &__input {
+                display: flex;
+                flex-flow: row nowrap;
+                font-size: 16px;
+                line-height: 26px;
+                text-align: center;
+                color: $black-text;
+
+                input {
+                    font-size: 16px;
+                    line-height: 26px;
+                    text-align: center;
+                    color: $black-text;
+                    background: #F2F3F5;
+                    border: none;
+                }
+            }
+        }
+
+        &__quantity {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
         }
     }
 }

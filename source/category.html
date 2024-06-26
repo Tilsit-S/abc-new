@@ -144,6 +144,55 @@
                                                     <p class="modal__product-description-text">Тубус пенал трехкомпонентный с комбинированной крышкой, размер 105 × 190 мм, картонный, ещё информаци</p>
                                                 </div>
                                             </div>
+                                            <div class="modal__select-field select-field">
+                                                <input class="select visually-hidden" value="4">
+                                                <span class="select-field__current-value" id="button">Диаметр 20 см</span>
+                                                <div class="select-field__list visually-hidden" id="selectList">
+                                                    <a href="#" class="select-field__item" data-class="1">Диаметр 10 см</a>
+                                                    <a href="#" class="select-field__item select-field__item_selected" data-class="2">Диаметр 20 см</a>
+                                                    <a href="#" class="select-field__item" data-class="3">Диаметр 30 см</a>
+                                                    <a href="#" class="select-field__item" data-class="4">Диаметр 40 см</a>
+                                                    <a href="#" class="select-field__item" data-class="5">Диаметр 50 см</a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="modal__diameter-field diameter-field">
+                                                <input class="select visually-hidden" value="4">
+                                                <span class="diameter-field__current-value">Без клапана дегазации</span>
+                                                <div class="diameter-field__features-list visually-hidden">
+                                                    <a href="#" class="diameter-field__features-item" data-class="1">Без клапана дегазации</a>
+                                                    <a href="#" class="diameter-field__features-item diameter-field__item_selected" data-class="2">Без клапана дегазации</a>
+                                                    <a href="#" class="diameter-field__features-item" data-class="3">Без клапана дегазации</a>
+                                                    <a href="#" class="diameter-field__features-item" data-class="4">Без клапана дегазации</a>
+                                                    <a href="#" class="diameter-field__features-item" data-class="5">Без клапана дегазации</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="counter" data-counter>
+                                                <button class="counter__button counter__button-minus">
+                                                    <svg width="18" height="3" viewBox="0 0 18 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2727 1C16.4656 1 16.6506 1.07662 16.787 1.21301C16.9234 1.3494 17 1.53439 17 1.72727C17 1.92016 16.9234 2.10514 16.787 2.24153C16.6506 2.37792 16.4656 2.45455 16.2727 2.45455C7.31038 2.45455 11.1605 2.45455 1.72727 2.45455C1.53439 2.45455 1.3494 2.37792 1.21301 2.24153C1.07662 2.10514 1 1.92016 1 1.72727C1 1.53439 1.07662 1.3494 1.21301 1.21301C1.3494 1.07662 1.53439 1 1.72727 1C11.1605 1 7.31038 1 16.2727 1Z" fill="#4269F5" stroke="#4269F5" />
+                                                    </svg>
+                                                </button>
+                                                <div class="counter__input"><input type="text" disabled placeholder="0"></div>
+                                                <button class="counter__button counter__button-plus">
+                                                    <svg width="18" height="3" viewBox="0 0 18 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2727 1C16.4656 1 16.6506 1.07662 16.787 1.21301C16.9234 1.3494 17 1.53439 17 1.72727C17 1.92016 16.9234 2.10514 16.787 2.24153C16.6506 2.37792 16.4656 2.45455 16.2727 2.45455C7.31038 2.45455 11.1605 2.45455 1.72727 2.45455C1.53439 2.45455 1.3494 2.37792 1.21301 2.24153C1.07662 2.10514 1 1.92016 1 1.72727C1 1.53439 1.07662 1.3494 1.21301 1.21301C1.3494 1.07662 1.53439 1 1.72727 1C11.1605 1 7.31038 1 16.2727 1Z" fill="#4269F5" stroke="#4269F5" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div class="modal__price">
+                                                <div class="modal__quantity">
+                                                    <p class="modal__quantity-name">Цена за штуку</p>
+                                                    <p class="modal__quantity-result">60 руб.</p>
+                                                </div>
+                                                <div class="modal__quantity">
+                                                    <p class="modal__quantity-name">Цена за партию</p>
+                                                    <p class="modal__quantity-result">120 000 руб.</p>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -866,6 +915,8 @@
 
     <script src="js/categoryTabs.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/select-field.js"></script>
+    <script src="js/counter.js"></script>
     
 </body>
 </html>
