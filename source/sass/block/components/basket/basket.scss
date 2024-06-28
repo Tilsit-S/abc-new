@@ -111,6 +111,8 @@
         color: $black-text;
     }
 
+
+
     /*------tuggles----------*/
 
     &__product-features {
@@ -118,6 +120,7 @@
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: flex-start;
+        width: 220px;
         padding-top: 7px;
     }
 
@@ -217,5 +220,60 @@
         font-size: 14px;
         line-height: 22px;
         color: $black-text;
+    }
+
+    /*------------counter------------*/
+    &__product-counter {
+        width: 200px;
+    }
+
+    .counter {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 4px;
+        background: #F2F3F5;
+        border-radius: 8px;
+
+        &__button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 4px;
+            background: rgba(43, 88, 250, 0.12);
+            user-select: none;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 24px;
+            text-align: center;
+            padding-bottom: 7px;
+            color: #4269F5;
+        }
+
+        &__input {
+            display: inline;
+            //flex-flow: row nowrap;
+            //font-size: 16px;
+            //line-height: 26px;
+            //text-align: center;
+            //color: $black-text;
+
+            input {
+                width: 25px;
+                font-size: 16px;
+                line-height: 26px;
+                text-align: center;
+                color: $black-text;
+                text-align: end;
+                background: #F2F3F5;
+                border: none;
+            }
+        }
     }
 }

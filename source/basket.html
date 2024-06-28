@@ -93,7 +93,7 @@
                         <li class="basket__product-features">
                             <div class="basket__checkbox-wrapper">
                                 <div class="basket__button radial" id="button-1">
-                                    <input type="checkbox" class="basket__checkbox" />
+                                    <input type="checkbox" class="basket__checkbox" checked />
                                     <div class="basket__knobs"></div>
                                     <div class="basket__layer"></div>
                                 </div>
@@ -109,6 +109,11 @@
                             </div>
                         </li>
                         <li class="basket__product-counter">
+                            <div class="counter" data-counter>
+                                <button class="counter__button counter__button-minus">-</button>
+                                <div class="counter__input"><input type="text" disabled placeholder="0"></div>
+                                <button class="counter__button counter__button-plus">+</button>
+                            </div>
                         </li>
                         <li class="basket__product-sell">
                         </li>
@@ -263,11 +268,7 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/productSlider.js" type="module"></script>
-    <script src="js/productCounter.js"></script>
-    <script src="js/productTabs.js"></script>
+    <script src="js/basket-counter.js"></script>
     
 </body>
 </html>
