@@ -1,4 +1,11 @@
 .product {
+    overflow: hidden;
+    margin-bottom: 39px;
+
+    &__wrapper {
+        border-bottom: 1px solid rgba(239, 239, 239, 1);
+        padding-bottom: 60px;
+    }
 
     &__link-wrapper {
         display: inline-flex;
@@ -469,9 +476,10 @@
             width: 459px;
     
             &__button-continue {
+                position: relative;
                 display: block;
                 width: 222px;
-                padding: 12px 10px;
+                padding: 12px 10px 12px 42px;
                 border: none;
                 border-radius: 8px;
                 background: #F2F3F5;
@@ -480,6 +488,18 @@
                 line-height: 24px;
                 text-align: center;
                 color: $black-text;
+
+                &::before {
+                    position: absolute;
+                    top: 16px;
+                    left: 52px;
+                    content: "";
+                    display: flex;
+                    width: 24px;
+                    height: 24px;
+                    background-image: url('../img/header/basket.svg');
+                    background-size: contain;
+                }
             }
     
             &__button-add {
