@@ -65,62 +65,180 @@
                     <a href="index.html" class="catalog__link">Главная</a><p class="basket__active-page">Корзина</p>
                 </div>
                 <h2 class="basket__title">Корзина</h2>
-                <ul class="basket__naming-list">
-                    <li class="basket__naming-item">
-                        <p>Товар</p>
-                    </li>
-                    <li class="basket__naming-item">
-                        <p>Услуги</p>
-                    </li>
-                    <li class="basket__naming-item">
-                        <p>Количество</p>
-                    </li>
-                    <li class="basket__naming-item">
-                        <p>Итог</p>
-                    </li>
-                </ul>
-                <div class="basket__product-wrapper">
-                    <ul class="basket__product-list">
-                        <li class="basket__product-info">
-                            <div class="basket__product-image">
-                                <img src="img/category/card/modal-card-picture.png" width="100px" height="100px" alt="tubus-picture">
-                            </div>
-                            <div class="basket__product-description">
-                                <p class="basket__product-article">ББД-56700067</p>
-                                <p class="basket__product-description-text">Тубус пенал трехкомпонентный с&nbsp;комбинированной крышкой, размер 105 × 190 мм, картонный, ещё информаци</p>
-                            </div>
+                <div class="basket__products">
+                    <ul class="basket__naming-list">
+                        <li class="basket__naming-item">
+                            <p>Товар</p>
                         </li>
-                        <li class="basket__product-features">
-                            <div class="basket__checkbox-wrapper">
-                                <div class="basket__button radial" id="button-1">
-                                    <input type="checkbox" class="basket__checkbox" checked />
-                                    <div class="basket__knobs"></div>
-                                    <div class="basket__layer"></div>
+                        <li class="basket__naming-item">
+                            <p>Услуги</p>
+                        </li>
+                        <li class="basket__naming-item">
+                            <p>Количество</p>
+                        </li>
+                        <li class="basket__naming-item">
+                            <p>Итог</p>
+                        </li>
+                    </ul>
+                    <div class="basket__product-wrapper">
+                        <ul class="basket__product-list">
+                            <li class="basket__product-info">
+                                <div class="basket__product-image">
+                                    <img src="img/category/card/modal-card-picture.png" width="100px" height="100px" alt="tubus-picture">
                                 </div>
-                                <p class="basket__checkbox-description">Разработка дизайна</p>
-                            </div>
-                            <div class="basket__checkbox-wrapper">
-                                <div class="basket__button radial" id="button-2">
-                                    <input type="checkbox" class="basket__checkbox" />
-                                    <div class="basket__knobs"></div>
-                                    <div class="basket__layer"></div>
+                                <div class="basket__product-description">
+                                    <p class="basket__product-article">ББД-56700067</p>
+                                    <p class="basket__product-description-text">Тубус пенал трехкомпонентный с&nbsp;комбинированной крышкой, размер 105 × 190 мм, картонный, ещё информаци</p>
                                 </div>
-                                <p class="basket__checkbox-description">Складская программа</p>
-                            </div>
+                            </li>
+                            <li class="basket__product-features">
+                                <div class="basket__checkbox-wrapper">
+                                    <div class="basket__button radial" id="first-product-button-1">
+                                        <input type="checkbox" class="basket__checkbox" checked />
+                                        <div class="basket__knobs"></div>
+                                        <div class="basket__layer"></div>
+                                    </div>
+                                    <p class="basket__checkbox-description">Разработка дизайна</p>
+                                </div>
+                                <div class="basket__checkbox-wrapper">
+                                    <div class="basket__button radial" id="first-product-button-2">
+                                        <input type="checkbox" class="basket__checkbox" />
+                                        <div class="basket__knobs"></div>
+                                        <div class="basket__layer"></div>
+                                    </div>
+                                    <p class="basket__checkbox-description">Складская программа</p>
+                                </div>
+                            </li>
+                            <li class="basket__product-counter">
+                                <div class="counter" data-counter>
+                                    <button class="counter__button counter__button-minus">-</button>
+                                    <div class="counter__input"><input type="text" disabled placeholder="0"></div>
+                                    <button class="counter__button counter__button-plus">+</button>
+                                </div>
+                            </li>
+                            <li class="basket__product-sell">
+                                <p class="basket__result-sell">23 678 000 <span>руб.</span></p>
+                                <p class="basket__per-unit">17.30 <span>руб. / шт</span></p>
+                            </li>
+                            <li class="basket__product-basket-link">
+                                <a href="basket.html"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="basket__product-wrapper">
+                        <ul class="basket__product-list">
+                            <li class="basket__product-info">
+                                <div class="basket__product-image">
+                                    <img src="img/category/card/modal-card-picture.png" width="100px" height="100px" alt="tubus-picture">
+                                </div>
+                                <div class="basket__product-description">
+                                    <p class="basket__product-article">ББД-56700067</p>
+                                    <p class="basket__product-description-text">Тубус пенал трехкомпонентный с&nbsp;комбинированной крышкой, размер 105 × 190 мм, картонный, ещё информаци</p>
+                                </div>
+                            </li>
+                            <li class="basket__product-features">
+                                <div class="basket__checkbox-wrapper">
+                                    <div class="basket__button radial" id="second-product-button-1">
+                                        <input type="checkbox" class="basket__checkbox" checked />
+                                        <div class="basket__knobs"></div>
+                                        <div class="basket__layer"></div>
+                                    </div>
+                                    <p class="basket__checkbox-description">Разработка дизайна</p>
+                                </div>
+                                <div class="basket__checkbox-wrapper">
+                                    <div class="basket__button radial" id="second-product-button-2">
+                                        <input type="checkbox" class="basket__checkbox" />
+                                        <div class="basket__knobs"></div>
+                                        <div class="basket__layer"></div>
+                                    </div>
+                                    <p class="basket__checkbox-description">Складская программа</p>
+                                </div>
+                            </li>
+                            <li class="basket__product-counter">
+                                <div class="counter" data-counter>
+                                    <button class="counter__button counter__button-minus">-</button>
+                                    <div class="counter__input"><input type="text" disabled placeholder="0"></div>
+                                    <button class="counter__button counter__button-plus">+</button>
+                                </div>
+                            </li>
+                            <li class="basket__product-sell">
+                                <p class="basket__result-sell">23 678 000 <span>руб.</span></p>
+                                <p class="basket__per-unit">17.30 <span>руб. / шт</span></p>
+                            </li>
+                            <li class="basket__product-basket-link">
+                                <a href="basket.html"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="basket__product-wrapper">
+                        <ul class="basket__product-list">
+                            <li class="basket__product-info">
+                                <div class="basket__product-image">
+                                    <img src="img/category/card/modal-card-picture.png" width="100px" height="100px" alt="tubus-picture">
+                                </div>
+                                <div class="basket__product-description">
+                                    <p class="basket__product-article">ББД-56700067</p>
+                                    <p class="basket__product-description-text">Тубус пенал трехкомпонентный с&nbsp;комбинированной крышкой, размер 105 × 190 мм, картонный, ещё информаци</p>
+                                </div>
+                            </li>
+                            <li class="basket__product-features">
+                                <div class="basket__checkbox-wrapper">
+                                    <div class="basket__button radial" id="third-product-button-1">
+                                        <input type="checkbox" class="basket__checkbox" checked />
+                                        <div class="basket__knobs"></div>
+                                        <div class="basket__layer"></div>
+                                    </div>
+                                    <p class="basket__checkbox-description">Разработка дизайна</p>
+                                </div>
+                                <div class="basket__checkbox-wrapper">
+                                    <div class="basket__button radial" id="third-product-button-2">
+                                        <input type="checkbox" class="basket__checkbox" />
+                                        <div class="basket__knobs"></div>
+                                        <div class="basket__layer"></div>
+                                    </div>
+                                    <p class="basket__checkbox-description">Складская программа</p>
+                                </div>
+                            </li>
+                            <li class="basket__product-counter">
+                                <div class="counter" data-counter>
+                                    <button class="counter__button counter__button-minus">-</button>
+                                    <div class="counter__input"><input type="text" disabled placeholder="0"></div>
+                                    <button class="counter__button counter__button-plus">+</button>
+                                </div>
+                            </li>
+                            <li class="basket__product-sell">
+                                <p class="basket__result-sell">23 678 000 <span>руб.</span></p>
+                                <p class="basket__per-unit">17.30 <span>руб. / шт</span></p>
+                            </li>
+                            <li class="basket__product-basket-link">
+                                <a href="basket.html"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="basket__calculate">
+                    <div class="basket__discount">
+                        <div class="basket__discount-input">
+                            <input type="text" placeholder="Введите промокод">
+                        </div>
+                        <button class="basket__discount-button">Применить</button>
+                    </div>
+                    <ul class="basket__cost-list">
+                        <li class="basket__cost-item">
+                            <p class="basket__cost-item-name">Сумма заказа</p>
+                            <p class="basket__cost-item-value">23 678 000 <span>руб.</span></p>
                         </li>
-                        <li class="basket__product-counter">
-                            <div class="counter" data-counter>
-                                <button class="counter__button counter__button-minus">-</button>
-                                <div class="counter__input"><input type="text" disabled placeholder="0"></div>
-                                <button class="counter__button counter__button-plus">+</button>
-                            </div>
+                        <li class="basket__cost-item">
+                            <p class="basket__cost-item-name">Сумма заказа</p>
+                            <p class="basket__cost-item-value">23 678 000 <span>руб.</span></p>
                         </li>
-                        <li class="basket__product-sell">
-                        </li>
-                        <li class="basket__product-basket-link">
+                        <li class="basket__cost-item">
+                            <p class="basket__cost-item-name">Сумма заказа</p>
+                            <p class="basket__cost-item-value">23 678 000 <span>руб.</span></p>
                         </li>
                     </ul>
                 </div>
+                <button class=""></button>
             </div>
         </section>
     </main>
