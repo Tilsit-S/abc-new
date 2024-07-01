@@ -372,7 +372,9 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        padding: 0 32px;
+        padding: 0 32px 40px 32px;
+        margin-bottom: 39px;
+        border-bottom: 1px solid #EFEFEF;
     }
 
     &__discount {
@@ -420,11 +422,51 @@
 
     &__cost-list {
         width: 400px;
+        padding-right: 40px;
     }
 
     &__cost-item {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        &:last-child {
+
+            .basket__cost-item-value {
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__cost-item-name {
+        font-size: 16px;
+        line-height: 26px;
+        color: #898D96;
+    }
+
+    &__cost-item-value {
+        font-size: 16px;
+        line-height: 26px;
+        color: $black-text;
+    }
+
+    &__regist-button {
+        display: block;
+        width: 175px;
+        padding: 16px 10px;
+        margin: 0 auto;
+        text-align: center;
+        background: #4269F5;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $white;
+        border: none;
+        border-radius: 8px;
+        margin-bottom: 40px;
     }
 }

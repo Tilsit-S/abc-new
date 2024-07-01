@@ -1,0 +1,103 @@
+.portfolio {
+    overflow: hidden;
+    margin-bottom: 99px;
+
+    &__link-wrapper {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    &__link {
+        position: relative;
+        font-size: 14px;
+        line-height: 22px;
+        color: $black-text;
+        padding-right: 40px;
+        margin-right: 13px;
+
+        &::before {
+            position: absolute;
+            top: 9px;
+            right: 9px;
+            content: "";
+            display: block;
+            width: 6px;
+            height: 1px;
+            background: #000;
+            background-repeat: no-repeat;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            position: absolute;
+            top: 13px;
+            right: 9px;
+            content: "";
+            display: block;
+            width: 6px;
+            height: 1px;
+            background: #000;
+            background-repeat: no-repeat;
+            transform: rotate(135deg);
+        }
+    }
+
+    &__active-page {
+        font-size: 14px;
+        line-height: 22px;
+        color: #A6A6A8;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 60px;
+        color: $black-text;
+        margin-bottom: 41px;
+    }
+
+    &__description {
+        width: 760px;
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 39px;
+    }
+
+    &__product-list {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+
+    &__product-item {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        width: 260px;
+
+        &:not(:last-child) {
+            margin-right: 38px;
+        }
+    }
+
+    &__product-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 260px;
+        height: 260px;
+        flex-shrink: 0;
+        margin-bottom: 17px;
+    }
+
+    &__product-link {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        color: $black-text;
+
+        &:hover {
+            color: rgba(66, 105, 245, 1);
+        }
+    }
+}

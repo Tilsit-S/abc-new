@@ -1,0 +1,112 @@
+.stories {
+    overflow: hidden;
+    margin-bottom: 40px;
+
+    &__wrapper {
+        border-bottom: 1px solid #EFEFEF;
+        padding-bottom: 99px;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        gap: 40px 37px;
+        margin-bottom: 100px;
+    }
+
+    &__item {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        width: 560px;
+    }
+
+    &__image {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 560px;
+        height: 360px;
+        border-radius: 4px;
+        margin-bottom: 24px;
+    }
+
+    &__item-title {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 16px;
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 16px;
+    }
+
+    &__link {
+        position: relative;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4269F5;
+
+        &::after {
+            position: absolute;
+            top: 8px;
+            right: 400px;
+            content: "";
+            display: block;
+            width: 20px;
+            height: 9px;
+            background-image: url("../img/stories/arrow.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__choice {
+        display: flex;
+        height: 360px;
+        background-image: url("../img/stories/stories.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        color: $white;
+        align-items: center;
+    }
+
+    &__choice-text-block {
+        width: 550px;
+        padding-left: 57px;
+    }
+
+    &__choice-title {
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 36px;
+        margin: 0 0 20px 0;
+    }
+
+    &__choice-description {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 25px;
+    }
+
+    &__choice-link {
+        color: $white;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
