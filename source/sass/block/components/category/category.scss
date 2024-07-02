@@ -92,8 +92,8 @@
         color: #44454B;
         text-align: center;
         margin-bottom: 60px;
-    }   
-        
+    }
+
     &__tabs-item {
         display: flex;
         flex-shrink: 0;
@@ -107,17 +107,17 @@
         border: none;
         border-radius: 8px;
         cursor: pointer;
-        
+
         &:not(:last-child) {
             margin-right: 9px;
         }
-        
+
         &.active {
             background: #090A12;
             color: $white;
         }
     }
-    
+
     &__content {
         margin-bottom: 40px;
     }
@@ -126,7 +126,7 @@
         position: absolute;
         display: none;
         gap: 40px;
-        
+
         &.active {
             position: relative;
             display: flex;
@@ -285,5 +285,14 @@
         color: #4269F5;
         border: none;
         text-decoration: underline;
+    }
+
+    &__hidden-list {
+
+        .price__item {
+            &:last-child {
+                margin-bottom: 16px;
+            }
+        }
     }
 }

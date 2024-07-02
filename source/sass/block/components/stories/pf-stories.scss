@@ -1,0 +1,112 @@
+.pf-stories {
+    overflow: hidden;
+    margin-bottom: 99px;
+
+    &__link-wrapper {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    &__link {
+        position: relative;
+        font-size: 14px;
+        line-height: 22px;
+        color: $black-text;
+        padding-right: 40px;
+        margin-right: 13px;
+
+        &::before {
+            position: absolute;
+            top: 9px;
+            right: 9px;
+            content: "";
+            display: block;
+            width: 6px;
+            height: 1px;
+            background: #000;
+            background-repeat: no-repeat;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            position: absolute;
+            top: 13px;
+            right: 9px;
+            content: "";
+            display: block;
+            width: 6px;
+            height: 1px;
+            background: #000;
+            background-repeat: no-repeat;
+            transform: rotate(135deg);
+        }
+    }
+
+    &__active-page {
+        font-size: 14px;
+        line-height: 22px;
+        color: #A6A6A8;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 48px;
+        color: $black-text;
+        margin-bottom: 41px;
+    }
+
+    &__description {
+        width: 760px;
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 39px;
+    }
+
+    &__text-block {
+        width: 860px;
+    }
+
+    &__main-image {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 860px;
+        height: 554px;
+        margin-bottom: 20px;
+    }
+
+    &__concept-title,
+    &__result-title {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 34px;
+        color: $black-text;
+        margin-bottom: 20px;
+    }
+
+    &__concept-text,
+    &__result-text {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+
+    &__result-image-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    &__result-image {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 420px;
+        height: 271px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+}

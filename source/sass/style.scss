@@ -2,7 +2,7 @@
 
 // components
 
-@import 
+@import
         //index
         "block/components/header.scss", "block/components/intro.scss",
         "block/components/clients.scss", "block/components/product.scss",
@@ -24,7 +24,11 @@
         "block/components/basket/basket.scss",
 
         //portfolio
-        "block/components/portfolio/portfolio.scss", "block/components/portfolio/stories.scss";
+        "block/components/portfolio/portfolio.scss", "block/components/portfolio/stories.scss",
+
+        //price
+        "block/components/portfolio/price.scss", "block/components/stories/pf-stories.scss";
+
 
 // subcomponents
 
