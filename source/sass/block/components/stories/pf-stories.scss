@@ -1,6 +1,6 @@
 .pf-stories {
     overflow: hidden;
-    margin-bottom: 99px;
+    margin-bottom: 39px;
 
     &__link-wrapper {
         display: flex;
@@ -53,7 +53,7 @@
         font-size: 40px;
         line-height: 48px;
         color: $black-text;
-        margin-bottom: 41px;
+        margin: 0 0 41px 0;
     }
 
     &__description {
@@ -74,7 +74,11 @@
         align-items: center;
         width: 860px;
         height: 554px;
-        margin-bottom: 20px;
+        margin-bottom: 59px;
+    }
+
+    &__concept {
+        margin-bottom: 60px;
     }
 
     &__concept-title,
@@ -83,20 +87,30 @@
         font-size: 24px;
         line-height: 34px;
         color: $black-text;
-        margin-bottom: 20px;
+        margin: 0 0 24px 0;
     }
 
-    &__concept-text,
+    &__result-title {
+        margin: 0 0 24px 0;
+    }
+
+    &__concept-text {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 24px;
+    }
+
     &__result-text {
         font-size: 16px;
         line-height: 26px;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
     }
 
     &__result-image-wrapper {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
+        margin-bottom: 40px;
     }
 
     &__result-image {
@@ -108,5 +122,35 @@
         height: 271px;
         border-radius: 4px;
         margin-bottom: 20px;
+    }
+
+    &__list {
+        list-style: disc;
+        padding-left: 25px;
+        margin-bottom: 100px;
+    }
+
+    &__item {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    &__other-stories {
+        padding: 0 0 100px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    &__other-stories-title {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 48px;
+        color: $black-text;
+        margin-bottom: 40px;
+    }
+
+    &__other-stories-list {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
     }
 }
