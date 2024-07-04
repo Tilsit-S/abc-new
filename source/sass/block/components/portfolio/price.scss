@@ -53,10 +53,7 @@
     }
 
     &__title {
-        font-weight: 800;
-        font-size: 40px;
-        line-height: 48px;
-        color: $black-text;
+        @include title;
         margin-bottom: 40px;
     }
 
@@ -84,4 +81,29 @@
         flex-shrink: 0;
         border-radius: 4px;
     }
+
+    /*---------------------modal-image---------------------*/
+    #lightbox {
+        position: fixed; z-index: 2;
+        top: 0; left: 0;
+        visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity ease 0.4s;
+      }
+       
+      #lightbox.show {
+        visibility: visible;
+        opacity: 1;
+      }
+       
+      #lightbox img {
+        width: 960px;
+        height: 618px;
+        object-fit: cover;
+      }
 }

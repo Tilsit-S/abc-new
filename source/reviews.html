@@ -59,68 +59,215 @@
     </header>
 
     <main class="page-main main">
+        <section class="main__reviews reviews">
+            <div class="reviews__wrapper container">
 
-        <section class="main__pf-stories pf-stories">
-            <div class="pf-stories__wrapper container">
-                <div class="pf-stories__link-wrapper">
-                    <a href="index.html" class="pf-stories__link">Главная</a><a href="portfolio.html" class="pf-stories__link">Портфолио</a><p class="pf-stories__active-page">Упаковка для сухофруктов «Вкусняшка»</p>
+                <div class="catalog__link-wrapper">
+                    <a href="index.html" class="catalog__link">Главная</a><p class="catalog__active-page">Отзывы</p>
                 </div>
-                <h3 class="pf-stories__title">Упаковка для сухофруктов «Вкусняшка»</h3>
-                <p class="pf-stories__description">Картонные тубусы - это не только практичное и экономичное решение, <br>но и возможность эффективно защитить ваши ценные вещи от повреждений и внешних воздействий.</p>
-                <div class="pf-stories__text-block">
-                    <div class="pf-stories__main-image">
-                        <img src="img/stories/pf-stories/main.png" width="860" height="554" alt="main-image">
-                    </div>
-                    <div class="pf-stories__concept">
-                        <h4 class="pf-stories__concept-title">Концепция</h4>
-                        <p class="pf-stories__concept-text">Для упаковки сухофруктов «Хрум хрум» была выбрана концепция, сочетающая в себе натуральность <br>и современный стиль. Основной акцент сделан на натуральные цвета и текстуры, отражающие свежесть <br>и качество продукта. Дизайн включает в себя иллюстрации фруктов, выполненные в минималистичном стиле, что подчеркивает натуральное происхождение продукта.</p>
-                        <p class="pf-stories__concept-text">Для упаковки использованы экологически чистые материалы, которые не только сохраняют продукт, но и заботятся об окружающей среде. <a href="#">Прозрачные вставки</a> позволяют покупателям увидеть продукт, что повышает их доверие и заинтересованность.</p>
-                    </div>
-                    <div class="pf-stories__result">
-                        <h4 class="pf-stories__result-title">Результаты</h4>
-                        <p class="pf-stories__result-text">Упаковка для сухофруктов «Хрум хрум» получила положительные отзывы как от клиентов, так и от конечных потребителей. Яркий и современный дизайн привлекает внимание на полках магазинов, а качественные материалы обеспечивают сохранность продукта. Бренд «Хрум хрум» стал узнаваемым и популярным среди покупателей, что поспособствовало увеличению продаж и расширению ассортимента.</p>
-                        <div class="pf-stories__result-image-wrapper">
-                            <div class="pf-stories__result-image">
-                                <img src="img/stories/pf-stories/result-1.png" width="420" height="271" alt="pack-image">
-                            </div>
-                            <div class="pf-stories__result-image">
-                                <img src="img/stories/pf-stories/result-2.png" width="420" height="271" alt="pack-image">
-                            </div>
-                        </div>
-                        <h4 class="pf-stories__result-title">Результаты</h4>
-                        <ul class="pf-stories__list">
-                            <li class="pf-stories__item">
-                                <p>Упаковка для сухофруктов «Хрум хрум» получила положительные отзывы как от клиентов, <br>так и от конечных потребителей.</p>
+                <h2 class="catalog__title">Отзывы</h2>
+                
+                <ul class="reviews__tabs" id="reviews-tabs">
+                    <li class="reviews__tabs-item active">Отзывы</li>
+                    <li class="reviews__tabs-item">Благодарности</li>
+                </ul>
+
+                <div class="reviews__content">
+                    <div class="reviews__content-item active">
+                        <ul class="reviews__list">
+                            <li class="reviews__item">
+                                <p class="reviews__eval">4.4</p>
+                                <p class="reviews__evaluator">Яндекс</p>
                             </li>
-                            <li class="pf-stories__item">
-                                <p>Яркий и современный дизайн привлекает внимание на полках магазинов, а качественные материалы обеспечивают сохранность продукта.</p>
+                            <li class="reviews__item">
+                                <p class="reviews__eval">5.0</p>
+                                <p class="reviews__evaluator">Google</p>
                             </li>
-                            <li class="pf-stories__item">
-                                <p>Бренд «Хрум хрум» стал узнаваемым и популярным среди покупателей, что поспособствовало увеличению продаж и расширению ассортимента.</p>
+                            <li class="reviews__item">
+                                <p class="reviews__eval">4.8</p>
+                                <p class="reviews__evaluator">Zoon</p>
+                            </li>
+                            <li class="reviews__item">
+                                <p class="reviews__eval">4.9</p>
+                                <p class="reviews__evaluator">2Gis</p>
+                            </li>
+                            <li class="reviews__item">
+                                <p class="reviews__eval">5.0</p>
+                                <p class="reviews__evaluator">Yell</p>
                             </li>
                         </ul>
+                        <ul class="reviews__comment-list">
+                            <li class="reviews__comment-item">
+                                <p class="reviews__comment-name">Инна Петровская</p>
+                                <div class="reviews__comment-eval-date">
+                                    <div class="reviews__comment-eval">
+                                        <div class="reviews__comment-eval-count">
+                                            <p class="green"></p>
+                                            <p class="green"></p>
+                                            <p class="green"></p>
+                                            <p class="green"></p>
+                                            <p class="gray"></p>
+                                        </div>
+                                        <p class="reviews__comment-eval-number">4.0</p>
+                                    </div>
+                                    <p class="reviews__comment-date">22 мая 2024</p>
+                                </div>
+                                <p class="reviews__comment-text">Добрый день! Заказывали для переезда много всего необходимого, сумки, коробки, клейкую ленту и прочее. Понравилось, что на сайте очень подробно и достоверно изложена вся нужная информация о товаре, его характеристика, цена. Важно было чтобы размеры были верными, у нас был крупногабаритный товар и важно было чтоб поместился. Менеджер быстро связался с нами, уточнил все что нужно и озвучил сроки доставки. Привезли все быстро! Спасибо магазину.</p>
+                                <a href="#" class="reviews__arrow">Отзыв на Яндекс.Маркет</a>
+                            </li>
+                            <li class="reviews__comment-item">
+                                <p class="reviews__comment-name">Аркадий Константинопольский</p>
+                                <div class="reviews__comment-eval-date">
+                                    <div class="reviews__comment-eval">
+                                        <div class="reviews__comment-eval-count">
+                                            <p class="green"></p>
+                                            <p class="green"></p>
+                                            <p class="green"></p>
+                                            <p class="green"></p>
+                                            <p class="green"></p>
+                                        </div>
+                                        <p class="reviews__comment-eval-number">5.0</p>
+                                    </div>
+                                    <p class="reviews__comment-date">19 мая 2024</p>
+                                </div>
+                                <p class="reviews__comment-text">Менеджер быстро связался с нами, уточнил все что нужно и озвучил сроки доставки. Привезли все быстро! Спасибо магазину.</p>
+                                <a href="#" class="reviews__arrow">Отзыв на Google</a>
+                            </li>
+                            <li class="reviews__comment-item">
+                                <p class="reviews__comment-name">Ян Альбертов</p>
+                                <div class="reviews__comment-eval-date">
+                                    <div class="reviews__comment-eval">
+                                        <div class="reviews__comment-eval-count">
+                                            <p class="green"></p>
+                                            <p class="green"></p>
+                                            <p class="green"></p>
+                                            <p class="green"></p>
+                                            <p class="gray"></p>
+                                        </div>
+                                        <p class="reviews__comment-eval-number">5.0</p>
+                                    </div>
+                                    <p class="reviews__comment-date">17 апреля 2024</p>
+                                </div>
+                                <p class="reviews__comment-text">Важно было чтобы размеры были верными, у нас был крупногабаритный товар и важно было чтоб поместился. Менеджер быстро связался с нами, уточнил все что нужно и озвучил сроки доставки. Привезли все быстро! Спасибо магазину.</p>
+                                <a href="#" class="reviews__arrow">Отзыв на Zoon</a>
+                            </li>
+                            <li class="reviews__comment-item">
+                                <p class="reviews__comment-name">Инна Петровская</p>
+                                <div class="reviews__comment-eval-date">
+                                    <div class="reviews__comment-eval">
+                                        <div class="reviews__comment-eval-count">
+                                            <p class="green"></p>
+                                            <p class="green"></p>
+                                            <p class="green"></p>
+                                            <p class="green"></p>
+                                            <p class="gray"></p>
+                                        </div>
+                                        <p class="reviews__comment-eval-number">4.0</p>
+                                    </div>
+                                    <p class="reviews__comment-date">22 мая 2024</p>
+                                </div>
+                                <p class="reviews__comment-text">Добрый день! Заказывали для переезда много всего необходимого, сумки, коробки, клейкую ленту и прочее. Понравилось, что на сайте очень подробно и достоверно изложена вся нужная информация о товаре, его характеристика, цена. Важно было чтобы размеры были верными, у нас был крупногабаритный товар и важно было чтоб поместился. Менеджер быстро связался с нами, уточнил все что нужно и озвучил сроки доставки. Привезли все быстро! Спасибо магазину.</p>
+                                <a href="#" class="reviews__arrow">Отзыв на Яндекс.Маркет</a>
+                            </li>
+                            <li class="reviews__comment-item">
+                                <p class="reviews__comment-name">Инна Петровская</p>
+                                <div class="reviews__comment-eval-date">
+                                    <div class="reviews__comment-eval">
+                                        <div class="reviews__comment-eval-count">
+                                            <p class="green"></p>
+                                            <p class="green"></p>
+                                            <p class="green"></p>
+                                            <p class="green"></p>
+                                            <p class="gray"></p>
+                                        </div>
+                                        <p class="reviews__comment-eval-number">4.0</p>
+                                    </div>
+                                    <p class="reviews__comment-date">22 мая 2024</p>
+                                </div>
+                                <p class="reviews__comment-text">Добрый день! Заказывали для переезда много всего необходимого, сумки, коробки, клейкую ленту и прочее. Понравилось, что на сайте очень подробно и достоверно изложена вся нужная информация о товаре, его характеристика, цена. Важно было чтобы размеры были верными, у нас был крупногабаритный товар и важно было чтоб поместился. Менеджер быстро связался с нами, уточнил все что нужно и озвучил сроки доставки. Привезли все быстро! Спасибо магазину.</p>
+                                <a href="#" class="reviews__arrow">Отзыв на Яндекс.Маркет</a>
+                            </li>
+                        </ul>
+                        <button class="reviews__button">Показать ещё</button>
                     </div>
-                </div>
-                <div class="pf-stories__other-stories">
-                    <h3 class="pf-stories__other-stories-title">Другие истории</h3>
-                    <ul class="pf-stories__other-stories-list">
-                        <li class="stories__item">
-                            <div class="stories__image">
-                                <img src="img/stories/pack-3.png" width="560" height="360" alt="pack-image">
-                            </div>
-                            <p class="stories__item-title">Упаковка для сухофруктов «Вкусняшка»</p>
-                            <p class="stories__description">Мы предлагаем бесплатные образцы: закажите, чтобы убедиться в нашем высоком стандарте качества!</p>
-                            <a href="pf-stories.html" class="stories__link">Читать историю</a>
-                        </li>
-                        <li class="stories__item">
-                            <div class="stories__image">
-                                <img src="img/stories/pack-1.png" width="560" height="360" alt="pack-image">
-                            </div>
-                            <p class="stories__item-title">Упаковка для сухофруктов «Вкусняшка»</p>
-                            <p class="stories__description">Мы предлагаем бесплатные образцы: закажите, чтобы убедиться в нашем высоком стандарте качества!</p>
-                            <a href="pf-stories.html" class="stories__link">Читать историю</a>
-                        </li>
-                    </ul>
+                    <div class="reviews__content-item">
+                        <ul class="reviews__certificate-list">
+                            <li class="reviews__certificate-item">
+                                <div class="reviews__certificate-image">
+                                    <img src="img/reviews/certificate.png" class="zoom" width="260" height="368" alt="certificate-image">
+                                </div>
+                                <p class="reviews__certificate-name">ООО «Ромашка»</p>
+                            </li>
+                            <li class="reviews__certificate-item">
+                                <div class="reviews__certificate-image">
+                                    <img src="img/reviews/certificate.png" class="zoom" width="260" height="368" alt="certificate-image">
+                                </div>
+                                <p class="reviews__certificate-name">ООО «Новые медицинские технологии»</p>
+                            </li>
+                            <li class="reviews__certificate-item">
+                                <div class="reviews__certificate-image">
+                                    <img src="img/reviews/certificate.png" class="zoom" width="260" height="368" alt="certificate-image">
+                                </div>
+                                <p class="reviews__certificate-name">ИП Воронина</p>
+                            </li>
+                            <li class="reviews__certificate-item">
+                                <div class="reviews__certificate-image">
+                                    <img src="img/reviews/certificate.png" class="zoom" width="260" height="368" alt="certificate-image">
+                                </div>
+                                <p class="reviews__certificate-name">ООО «Ромашка»</p>
+                            </li>
+                            <li class="reviews__certificate-item">
+                                <div class="reviews__certificate-image">
+                                    <img src="img/reviews/certificate.png" class="zoom" width="260" height="368" alt="certificate-image">
+                                </div>
+                                <p class="reviews__certificate-name">ООО «Ромашка»</p>
+                            </li>
+                            <li class="reviews__certificate-item">
+                                <div class="reviews__certificate-image">
+                                    <img src="img/reviews/certificate.png" class="zoom" width="260" height="368" alt="certificate-image">
+                                </div>
+                                <p class="reviews__certificate-name">ООО «Новые медицинские технологии»</p>
+                            </li>
+                            <li class="reviews__certificate-item">
+                                <div class="reviews__certificate-image">
+                                    <img src="img/reviews/certificate.png" class="zoom" width="260" height="368" alt="certificate-image">
+                                </div>
+                                <p class="reviews__certificate-name">ИП Воронина</p>
+                            </li>
+                            <li class="reviews__certificate-item">
+                                <div class="reviews__certificate-image">
+                                    <img src="img/reviews/certificate.png" class="zoom" width="260" height="368" alt="certificate-image">
+                                </div>
+                                <p class="reviews__certificate-name">ООО «Ромашка»</p>
+                            </li>
+                            <li class="reviews__certificate-item">
+                                <div class="reviews__certificate-image">
+                                    <img src="img/reviews/certificate.png" class="zoom" width="260" height="368" alt="certificate-image">
+                                </div>
+                                <p class="reviews__certificate-name">ООО «Ромашка»</p>
+                            </li>
+                            <li class="reviews__certificate-item">
+                                <div class="reviews__certificate-image">
+                                    <img src="img/reviews/certificate.png" class="zoom" width="260" height="368" alt="certificate-image">
+                                </div>
+                                <p class="reviews__certificate-name">ООО «Новые медицинские технологии»</p>
+                            </li>
+                            <li class="reviews__certificate-item">
+                                <div class="reviews__certificate-image">
+                                    <img src="img/reviews/certificate.png" class="zoom" width="260" height="368" alt="certificate-image">
+                                </div>
+                                <p class="reviews__certificate-name">ИП Воронина</p>
+                            </li>
+                            <li class="reviews__certificate-item">
+                                <div class="reviews__certificate-image">
+                                    <img src="img/reviews/certificate.png" class="zoom" width="260" height="368" alt="certificate-image">
+                                </div>
+                                <p class="reviews__certificate-name">ООО «Ромашка»</p>
+                            </li>
+                        </ul>
+                        <div id="rev-lightbox"></div>
+                        <button class="reviews__certificate-button">Показать ещё</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -269,6 +416,9 @@
             <p class="footer__copyright">© ABC Pack 2024. Все права защищены</p>
         </div>
     </footer>
+
+    <script src="js/reviewsTabs.js"></script>
+    <script src="js/reviewsZoomImg.js"></script>
 
 </body>
 </html>

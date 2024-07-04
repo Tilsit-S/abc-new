@@ -49,10 +49,7 @@
     }
 
     &__title {
-        font-weight: 800;
-        font-size: 40px;
-        line-height: 48px;
-        color: $black-text;
+        @include title;
         margin: 0 0 41px 0;
     }
 
@@ -98,6 +95,11 @@
         font-size: 16px;
         line-height: 26px;
         margin-bottom: 24px;
+
+        a {
+            color: #4269F5;
+            text-decoration: underline;
+        }
     }
 
     &__result-text {
@@ -141,10 +143,7 @@
     }
 
     &__other-stories-title {
-        font-weight: 800;
-        font-size: 40px;
-        line-height: 48px;
-        color: $black-text;
+        @include title;
         margin-bottom: 40px;
     }
 
