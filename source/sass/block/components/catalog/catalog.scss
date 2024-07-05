@@ -51,10 +51,7 @@
     }
 
     &__title {
-        font-weight: 800;
-        font-size: 48px;
-        line-height: 60px;
-        color: $black-text;
+        @include title;
         margin-bottom: 40px;
     }
 

@@ -1,0 +1,45 @@
+.requisite {
+    overflow: hidden;
+    border-bottom: 1px solid #EFEFEF;
+    padding-bottom: 90px;
+    margin-bottom: 39px;
+
+    &__title {
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 44px;
+        color: $black-text;
+        margin-bottom: 41px;
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 760px;
+        gap: 21px;
+        padding-bottom: 10px;
+    }
+
+    &__item {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        width: 360px;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 14px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: rgba(137, 141, 150, 1);
+        margin-bottom: 7px;
+    }
+
+    &__value {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}

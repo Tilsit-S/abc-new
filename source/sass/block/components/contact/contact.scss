@@ -1,0 +1,278 @@
+.contact {
+    overflow: hidden;
+    margin-bottom: 40px;
+
+    &__wrapper {
+        padding-bottom: 60px;
+        border-bottom: 1px solid #EFEFEF;
+    }
+
+    &__link-wrapper {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    &__link {
+        position: relative;
+        font-size: 14px;
+        line-height: 22px;
+        color: $black-text;
+        padding-right: 40px;
+        margin-right: 13px;
+
+        &::before {
+            position: absolute;
+            top: 9px;
+            right: 9px;
+            content: "";
+            display: block;
+            width: 6px;
+            height: 1px;
+            background: #000;
+            background-repeat: no-repeat;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            position: absolute;
+            top: 13px;
+            right: 9px;
+            content: "";
+            display: block;
+            width: 6px;
+            height: 1px;
+            background: #000;
+            background-repeat: no-repeat;
+            transform: rotate(135deg);
+        }
+    }
+
+    &__active-page {
+        font-size: 14px;
+        line-height: 22px;
+        color: #A6A6A8;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 60px;
+        color: $black-text;
+        margin-bottom: 39px;
+    }
+
+    &__info-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+
+    &__info-text {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        width: 560px;
+    }
+
+    &__info-list {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        margin-bottom: 40px;
+    }
+
+    &__info-item {
+
+        p {
+            position: relative;
+            font-size: 16px;
+            line-height: 26px;
+            padding-left: 34px;
+
+            &::before {
+                position: absolute;
+                top: 1px;
+                left: 0;
+                content: "";
+                display: flex;
+                width: 24px;
+                height: 24px;
+                background-size: contain;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        &:nth-child(1) {
+
+            p {
+                &::before {
+                    background-image: url('../img/contact/tel.svg');
+                }
+            }
+        }
+
+        &:nth-child(2) {
+
+            p {
+                &::before {
+                    background-image: url('../img/contact/mail.svg');
+                }
+            }
+        }
+
+        &:nth-child(3) {
+
+            p {
+                &::before {
+                    background-image: url('../img/contact/geo.svg');
+                }
+            }
+        }
+    }
+
+    &__info-description {
+        font-size: 16px;
+        line-height: 162%;
+        padding: 24px;
+        background: rgba(43, 88, 250, 0.12);
+    }
+
+    &__info-map {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 560px;
+        height: 360px;
+        border-radius: 4px;
+    }
+
+    &__group-wrapper {
+        margin-bottom: 40px;
+    }
+
+    &__group-title {
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 44px;
+        color: $black-text;
+        margin-bottom: 60px;
+    }
+
+    &__group-list {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 40px;
+    }
+
+    &__group-item {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        width: 360px;
+    }
+
+    &__group-image {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-right: 25px;
+    }
+
+    &__group-info {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+    }
+
+    &__group-name {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 28px;
+        color: $black-text;
+        margin-bottom: 13px;
+    }
+
+    &__group-post {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #5F6571;
+        margin-bottom: 13px;
+    }
+
+    &__group-phone,
+    &__group-mail {
+        position: relative;
+        font-size: 14px;
+        line-height: 157%;
+        padding-left: 30px;
+
+        &::before {
+            position: absolute;
+            top: -2px;
+            left: 0;
+            content: "";
+            display: flex;
+            width: 24px;
+            height: 24px;
+            background-size: contain;
+        }
+    }
+
+    &__group-phone {
+        margin-bottom: 14px;
+        &::before {
+            background-image: url('../img/contact/tel.svg');
+        }
+    }
+
+    &__group-mail {
+        margin-bottom: 24px;
+        &::before {
+            background-image: url('../img/contact/mail.svg');
+        }
+    }
+
+    &__group-social {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+
+    &__group-telegram,
+    &__group-whatsapp {
+        display: flex;
+        flex-shrink: 0;
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+        background: #F2F3F5;
+    }
+
+    &__group-telegram {
+        background-image: url('../img/contact/telegram.svg');
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 8px;
+    }
+
+    &__group-whatsapp {
+        background-image: url('../img/contact/whatsapp.svg');
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

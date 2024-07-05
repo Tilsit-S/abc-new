@@ -1,0 +1,120 @@
+.documents {
+    overflow: hidden;
+    margin-bottom: 40px;
+
+    &__wrapper {
+        padding-bottom: 11px;
+    }
+
+    &__link-wrapper {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    &__link {
+        position: relative;
+        font-size: 14px;
+        line-height: 22px;
+        color: $black-text;
+        padding-right: 40px;
+        margin-right: 13px;
+
+        &::before {
+            position: absolute;
+            top: 9px;
+            right: 9px;
+            content: "";
+            display: block;
+            width: 6px;
+            height: 1px;
+            background: #000;
+            background-repeat: no-repeat;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            position: absolute;
+            top: 13px;
+            right: 9px;
+            content: "";
+            display: block;
+            width: 6px;
+            height: 1px;
+            background: #000;
+            background-repeat: no-repeat;
+            transform: rotate(135deg);
+        }
+    }
+
+    &__active-page {
+        font-size: 14px;
+        line-height: 22px;
+        color: #A6A6A8;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 60px;
+        color: $black-text;
+        margin-bottom: 39px;
+    }
+
+    &__download-list {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 760px;
+        margin-bottom: 10px;
+    }
+
+    &__download-item {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 16px 0 15px 0;
+        align-items: center;
+        border-bottom: 1px solid #EFEFEF;
+    }
+
+    &__download-info {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__download-format {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 4px 10px;
+        background: rgba(239, 239, 239, 1);
+        border-radius: 8px;
+        margin-right: 18px;
+    }
+
+    &__download-index {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    &__download-label {
+        position: relative;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        padding-right: 39px;
+
+        &::after {
+            position: absolute;
+            top: 1px;
+            right: -1px;
+            content: "";
+            display: block;
+            width: 24px;
+            height: 24px;
+            background-image: url("../img/documents/download.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+}
