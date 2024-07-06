@@ -276,13 +276,13 @@
     }
 
     &__read-more-text {
-        color: #4269F5;
+        color: $blue;
     }
 
     &__read-more-text-button {
         cursor: pointer;
         display: block;
-        color: #4269F5;
+        color: $blue;
         border: none;
         text-decoration: underline;
     }

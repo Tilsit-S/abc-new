@@ -32,7 +32,7 @@
         display: flex;
         flex-flow: column nowrap;
         padding: 0px;
-        border-bottom: 1px solid #EFEFEF;
+        @include border-bottom;
 
         &:nth-child(2) {
             padding-bottom: 0px;
@@ -147,7 +147,7 @@
         align-items: center;
         width: 132px;
         padding: 16px 3px;
-        background: #4269F5;
+        background: $blue;
         border-radius: 8px;
         font-weight: 700;
         font-size: 16px;

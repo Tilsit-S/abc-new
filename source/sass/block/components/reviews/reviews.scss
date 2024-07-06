@@ -3,7 +3,7 @@
     margin-bottom: 40px;
 
     &__wrapper {
-        border-bottom: 1px solid #EFEFEF;
+        @include border-bottom;
     }
 
     &__link-wrapper {
@@ -147,7 +147,7 @@
         flex-flow: column nowrap;
         justify-content: flex-start;
         padding: 40px 0;
-        border-bottom: 1px solid rgba(239, 239, 239, 1);
+        @include border-bottom;
     }
 
     &__comment-name {
@@ -220,7 +220,7 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 24px;
-        color: #4269F5;
+        color: $blue;
 
         &::after {
             position: absolute;

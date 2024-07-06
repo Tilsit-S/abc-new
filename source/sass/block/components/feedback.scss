@@ -7,7 +7,7 @@
         flex-flow: row nowrap;
         justify-content: space-between;
         padding-bottom: 100px;
-        border-bottom: 1px solid #EFEFEF;
+        @include border-bottom;
     }
 
     &__image {
@@ -69,7 +69,7 @@
         text-align: center;
         width: 160px;
         padding: 12px 5px;
-        background: #4269F5;
+        background: $blue;
         border: none;
         border-radius: 8px;
         font-weight: 700;
@@ -97,6 +97,6 @@
         font-size: 14px;
         line-height: 22px;
         text-decoration: underline;
-        color: #4269F5;
+        color: $blue;
     }
 }

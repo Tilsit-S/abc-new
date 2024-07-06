@@ -1,6 +1,6 @@
 .requisite {
     overflow: hidden;
-    border-bottom: 1px solid #EFEFEF;
+    @include border-bottom;
     padding-bottom: 90px;
     margin-bottom: 39px;
 

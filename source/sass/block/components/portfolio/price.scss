@@ -3,7 +3,7 @@
     margin-bottom: 40px;
 
     &__wrapper {
-        border-bottom: 1px solid #EFEFEF;
+        @include border-bottom;
     }
 
     &__link-wrapper {

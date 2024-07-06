@@ -111,7 +111,7 @@
             line-height: 16px;
             letter-spacing: 1px;
             text-transform: uppercase;
-            color: #4269F5;
+            color: $blue;
         }
 
         &__hidden-content,
@@ -151,13 +151,13 @@
         }
 
         &__read-more-text {
-            color: #4269F5;
+            color: $blue;
         }
 
         &__read-more-text-button {
             cursor: pointer;
             display: block;
-            color: #4269F5;
+            color: $blue;
             border: none;
             text-decoration: underline;
         }

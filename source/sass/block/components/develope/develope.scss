@@ -1,0 +1,375 @@
+.develope {
+    overflow: hidden;
+    margin-bottom: 60px;
+
+    &__link-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        margin-bottom: 39px;
+    }
+
+    &__link {
+        position: relative;
+        font-size: 14px;
+        line-height: 22px;
+        color: $black-text;
+        padding-right: 40px;
+        margin-right: 13px;
+
+        &::before {
+            position: absolute;
+            top: 9px;
+            right: 9px;
+            content: "";
+            display: block;
+            width: 6px;
+            height: 1px;
+            background: #000;
+            background-repeat: no-repeat;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            position: absolute;
+            top: 13px;
+            right: 9px;
+            content: "";
+            display: block;
+            width: 6px;
+            height: 1px;
+            background: #000;
+            background-repeat: no-repeat;
+            transform: rotate(135deg);
+        }
+    }
+
+    &__active-page {
+        font-size: 14px;
+        line-height: 22px;
+        color: #A6A6A8;
+    }
+
+    &__description-block {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+
+    &__description-text {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        width: 560px;
+    }
+
+    &__title {
+        @include title;
+        margin: 16px 0 25px 0;
+    }
+
+    &__subtitle {
+        width: 500px;
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 39px
+    }
+
+    &__description-link {
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        width: 182px;
+        padding: 16px 3px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $white;
+        background-color: $blue;
+        border-radius: 8px;
+        margin-right: 12px;
+    }
+
+    &__description-image {
+        @include image-wrapper;
+        border-radius: 4px;
+    }
+
+    &__present-slider {
+        margin-bottom: 64px;
+    }
+
+    &__slider-title {
+        width: 560px;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 44px;
+        color: $black-text;
+        margin-bottom: 16px;
+    }
+
+    &__slider-subtitle {
+        width: 400px;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 40px;
+    }
+
+    &__slide-image {
+        position: relative;
+        @include image-wrapper;
+        width: 553px;
+        height: 450px;
+        margin-right: 30px;
+
+        img {
+            position: absolute;
+            bottom: 91px;
+            right: -2px;
+        }
+    }
+
+    &__slide-text {
+        width: 450px;
+        padding: 92px 0;
+    }
+
+    &__slide-title {
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 36px;
+        color: $white;
+        margin-bottom: 23px;
+    }
+
+    &__slide-subtitle {
+        font-size: 16px;
+        line-height: 26px;
+        color: $white;
+    }
+
+    &__slide {
+        display: flex;
+        flex-flow: row nowrap;
+        flex-shrink: 0;
+        //align-items: center;
+        width: 1160px;
+        height: 360px;
+
+        &:nth-child(1),
+        &:nth-child(3) {
+            background: #66DBBD;
+        }
+        &:nth-child(2),
+        &:nth-child(4) {
+            background: #7994F3;
+        }
+    }
+
+    /* Слайдер запущен */
+    .slick-slider.slick-initialized{}
+
+    /* Слайдер с точками */
+    .slick-slider.slick-dotted{
+        position: relative;
+    }
+
+    .slick-arrow {
+        position: absolute;
+        top: -88px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        font-size: 0;
+        z-index: 1;
+        border: none;
+        background-color: #F2F3F5;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .slick-prev.slick-arrow {
+        right: 60px;
+        background-image: url("../img/develope/arrow.svg");
+        background-position: center;
+        background-size: 21px 26px;
+        background-repeat: no-repeat;
+    }
+
+    .slick-next.slick-arrow {
+        right: 0;
+        background-image: url("../img/develope/arrow.svg");
+        background-position: center;
+        background-size: 21px 26px;
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+    }
+
+    /* dots */
+    .slick-dots {
+        display: flex;
+        flex-shrink: 0;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        width: 75px;
+        margin: 0 auto;
+    }
+
+    .slick-dots li button {
+        display: block;
+        width: 6px;
+        height: 6px;
+        padding: 0px;
+        font-size: 0;
+        background: #E3E7F0;
+        border: none;
+        border-radius: 1px;
+    }
+
+    .slick-dots .slick-active button {
+        width: 6px;
+        height: 6px;
+        background: $black;
+    }
+
+    /* Ограничивающая оболочка */
+    .slick-list {
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    /* Лента слайдов */
+    .slick-track{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+
+    /* Слайд */
+    .slick-slide{
+        overflow: hidden;
+        height: 360px;
+
+        &:not(:first-child) {
+            margin-left: 15px;
+        }
+        
+        img {
+            width: 100%;
+        }
+    }
+
+    .slider {
+        position: relative;
+    }
+
+    &__works {
+        margin-bottom: 100px;
+    }
+
+    &__works-title {
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 44px;
+        color: $black-text;
+        margin-bottom: 60px;
+    }
+    /*---------------------------------*/
+
+    &__list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        gap: 0 41px;
+        margin-bottom: 60px;
+    }
+
+    &__item {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        width: 560px;
+    }
+
+    &__image {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 560px;
+        height: 360px;
+        border-radius: 4px;
+        margin-bottom: 24px;
+    }
+
+    &__item-title {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 16px;
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 16px;
+    }
+
+    &__item-link {
+        position: relative;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $blue;
+
+        &::after {
+            position: absolute;
+            top: 8px;
+            right: 400px;
+            content: "";
+            display: block;
+            width: 20px;
+            height: 9px;
+            background-image: url("../img/stories/arrow.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__item-port-link {
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        width: 210px;
+        padding: 16px 3px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+        background-color: #4269f5;
+        margin-right: 12px;
+        border-radius: 8px;
+    }
+
+    &__gallery-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        gap: 40px;
+        margin-bottom: 120px;
+    }
+
+    &__gallery-item {
+        @include image-wrapper;
+        width: 360px;
+        height: 232px;
+    }
+}

@@ -7,7 +7,7 @@
         justify-content: space-between;
         padding-bottom: 40px;
         margin-bottom: 40px;
-        border-bottom: 1px solid #EFEFEF;
+        @include border-bottom;
 
         &__title {
             font-weight: 800;
@@ -59,7 +59,7 @@
             align-items: center;
             width: 32px;
             height: 32px;
-            background: #4269F5;
+            background: $blue;
             border-radius: 50%;
 
             &:not(:last-child) {
@@ -91,7 +91,7 @@
         justify-content: space-between;
         padding-bottom: 40px;
         margin-bottom: 39px;
-        border-bottom: 1px solid #EFEFEF;
+        @include border-bottom;
     }
 
     &__solution,

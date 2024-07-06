@@ -74,7 +74,7 @@
         flex-flow: column nowrap;
         width: 560px;
         padding: 16px 0;
-        border-bottom: 1px solid rgba(239, 239, 239, 1);
+        @include border-bottom;
     }
 
     &__characteristic-name {

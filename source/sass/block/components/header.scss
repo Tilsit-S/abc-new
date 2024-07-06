@@ -1,7 +1,7 @@
 .header {
     overflow: hidden;
     margin-bottom: 44px;
-    border-bottom: 1px solid #EFEFEF;
+    @include border-bottom;
 
     &__wrapper {
         padding: 17px 11px 21px 12px;
@@ -104,7 +104,7 @@
         flex-shrink: 0;
         width: 140px;
         padding: 0 0 0 33px;
-        background: #4269F5;
+        background: $blue;
         font-weight: 700;
         font-size: 16px;
         line-height: 24px;

@@ -4,7 +4,7 @@
 
     &__wrapper {
         padding-bottom: 60px;
-        border-bottom: 1px solid #EFEFEF;
+        @include border-bottom;
     }
 
     &__link-wrapper {

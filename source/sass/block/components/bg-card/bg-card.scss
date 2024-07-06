@@ -106,7 +106,7 @@
         margin-bottom: 24px;
 
         a {
-            color: #4269F5;
+            color: $blue;
             text-decoration: underline;
         }
     }
@@ -207,7 +207,7 @@
             overflow: hidden;
             display: flex;
             flex-shrink: 0;
-            background: #4269F5;
+            background: $blue;
             width: 100%;
             height: 240px;
             border-radius: 4px;

@@ -3,7 +3,7 @@
     margin-bottom: 39px;
 
     &__wrapper {
-        border-bottom: 1px solid rgba(239, 239, 239, 1);
+        @include border-bottom;
         padding-bottom: 60px;
     }
 
@@ -289,7 +289,7 @@
             flex-flow: row nowrap;
             justify-content: space-between;
             padding: 12px 0;
-            border-bottom: 1px solid #EFEFEF;
+            @include border-bottom;
         }
 
         &__quantity {
@@ -397,7 +397,7 @@
                 line-height: 24px;
                 text-align: center;
                 padding-bottom: 7px;
-                color: #4269F5;
+                color: $blue;
                 user-select: none;
             }
     

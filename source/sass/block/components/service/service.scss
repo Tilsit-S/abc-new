@@ -1,3 +1,99 @@
 .service {
-    
+    overflow: hidden;
+    margin-bottom: 60px;
+
+    &__link-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        margin-bottom: 39px;
+    }
+
+    &__link {
+        position: relative;
+        font-size: 14px;
+        line-height: 22px;
+        color: $black-text;
+        padding-right: 40px;
+        margin-right: 13px;
+
+        &::before {
+            position: absolute;
+            top: 9px;
+            right: 9px;
+            content: "";
+            display: block;
+            width: 6px;
+            height: 1px;
+            background: #000;
+            background-repeat: no-repeat;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            position: absolute;
+            top: 13px;
+            right: 9px;
+            content: "";
+            display: block;
+            width: 6px;
+            height: 1px;
+            background: #000;
+            background-repeat: no-repeat;
+            transform: rotate(135deg);
+        }
+    }
+
+    &__active-page {
+        font-size: 14px;
+        line-height: 22px;
+        color: #A6A6A8;
+    }
+
+    &__description-block {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    &__description-text {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        width: 560px;
+    }
+
+    &__title {
+        @include title;
+        margin: 24px 0 25px 0;
+    }
+
+    &__subtitle {
+        width: 455px;
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 39px
+    }
+
+    &__description-link {
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        width: 182px;
+        padding: 16px 3px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $white;
+        background-color: $blue;
+        border-radius: 8px;
+        margin-right: 12px;
+    }
+
+    &__description-image {
+        @include image-wrapper;
+        border-radius: 4px;
+    }
 }

@@ -3,7 +3,7 @@
     margin-bottom: 39px;
 
     &__wrapper {
-        border-bottom: 1px solid rgba(239, 239, 239, 1);
+        @include border-bottom;
         padding-bottom: 60px;
     }
 
@@ -35,7 +35,7 @@
         flex-flow: row nowrap;
         justify-content: flex-start;
         padding-bottom: 22px;
-        border-bottom: 1px solid rgba(239, 239, 239, 1);
+        @include border-bottom;
     }
 
     &__naming-item {
@@ -69,7 +69,7 @@
         display: flex;
         flex-flow: row nowrap;
         padding: 40px 0;
-        border-bottom: 1px solid rgba(239, 239, 239, 1);
+        @include border-bottom;
 
         li {
             &:not(:last-child) {
@@ -224,7 +224,7 @@
     #second-product-button-2 &__checkbox:checked ~ &__layer,
     #third-product-button-1 &__checkbox:checked ~ &__layer,
     #third-product-button-2 &__checkbox:checked ~ &__layer {
-        background-color: #4269F5;
+        background-color: $blue;
     }
 
     #first-product-button-1 &__knobs,
@@ -285,7 +285,7 @@
             line-height: 24px;
             text-align: center;
             padding-bottom: 7px;
-            color: #4269F5;
+            color: $blue;
         }
 
         &__input {
@@ -374,7 +374,7 @@
         justify-content: space-between;
         padding: 0 32px 40px 32px;
         margin-bottom: 39px;
-        border-bottom: 1px solid #EFEFEF;
+        @include border-bottom;
     }
 
     &__discount {
@@ -415,7 +415,7 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 24px;
-        color: #4269f5;
+        color: $blue;
         transition: all 200ms ease;
         cursor: pointer;
     }
@@ -460,7 +460,7 @@
         padding: 16px 10px;
         margin: 0 auto;
         text-align: center;
-        background: #4269F5;
+        background: $blue;
         font-weight: 700;
         font-size: 16px;
         line-height: 24px;
