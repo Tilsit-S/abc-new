@@ -1,0 +1,153 @@
+.welfare {
+    overflow: hidden;
+    margin-bottom: 100px;
+
+    &__title {
+        @include title;
+        margin-bottom: 60px;
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+
+    &__item {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        width: 360px;
+
+        &:nth-child(1) {
+            .welfare__item-icon {
+                background-image: url("../img/about-us/client.svg");
+            }
+        }
+
+        &:nth-child(2) {
+            .welfare__item-icon {
+                background-image: url("../img/about-us/team.svg");
+            }
+        }
+
+        &:nth-child(3) {
+            .welfare__item-icon {
+                background-image: url("../img/about-us/result.svg");
+            }
+        }
+    }
+
+    &__item-icon {
+        display: block;
+        width: 60px;
+        height: 60px;
+        background: #F2F3F5;
+        border-radius: 50%;
+        background-size: 25px 24px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 24px;
+    }
+
+    &__item-name {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 34px;
+        color: $black-text;
+        margin-bottom: 24px;
+    }
+
+    &__item-text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    &__achievement-list {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 60px 20px;
+        background: #66DBBD;
+        margin-bottom: 100px;
+    }
+
+    &__achievement-item {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        width: 374px;
+        padding-left: 40px;
+
+        &:not(:last-child) {
+            border-right: 1px solid #EFEFEF;
+        }
+    }
+
+    &__achievement-value {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 60px;
+        color: $white;
+        margin-bottom: 9px;
+    }
+
+    &__achievement-text {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    &__warranty-title {
+        @include title;
+        margin-bottom: 60px;
+    }
+
+    &__warranty-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        gap: 38px;
+        margin-bottom: 40px;
+    }
+
+    &__warranty-item {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        width: 560px;
+        padding: 40px;
+        border: 1px solid #EFEFEF;
+        border-radius: 4px;
+    }
+
+    &__warranty-name {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 34px;
+        color: $black-text;
+        margin-bottom: 23px;
+    }
+
+    &__warranty-text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    &__serv-link {
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        width: 193px;
+        padding: 16px 3px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+        background-color: #4269f5;
+        border-radius: 8px;
+    }
+}

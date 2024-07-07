@@ -49,12 +49,10 @@
     &__content-item {
         position: absolute;
         display: none;
-        //left: -5000px;
         
         &.active {
             position: relative;
             display: flex;
-            //left: 0;
         }
     }
 
