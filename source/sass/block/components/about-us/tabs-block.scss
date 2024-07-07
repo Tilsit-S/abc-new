@@ -1,6 +1,11 @@
 .tabs-block {
     overflow: hidden;
-    margin-bottom: 100px;
+    margin-bottom: 39px;
+
+    &__wrapper {
+        padding-bottom: 60px;
+        border-bottom: 1px solid #EFEFEF;
+    }
 
     &__title {
         font-weight: 800;
@@ -43,6 +48,7 @@
     }
     
     &__history-content {
+        margin-bottom: 100px;
     }
 
     &__history-content-item {
@@ -53,5 +59,194 @@
             position: relative;
             display: flex;
         }
+    }
+
+    &__history-content-block {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+
+    &__history-content-image {
+        @include image-wrapper;
+        margin-right: 40px;
+    }
+
+    &__history-content-text-block {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        width: 500px;
+        padding-top: 60px;
+    }
+
+    &__history-content-title {
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 129%;
+        color: $black-text;
+        margin: 0 0 24px 0;
+    }
+
+    &__history-content-text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /*------------------production--------------------*/
+    &__production-tabs {
+        display: flex;
+        justify-content: flex-start;
+        color: #44454B;
+        text-align: center;
+        margin-bottom: 40px;
+    }   
+        
+    &__production-tab {
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        background: #F2F3F5;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        
+        &:not(:last-child) {
+            margin-right: 13px;
+        }
+        
+        &.active {
+            background: #090A12;
+            color: $white;
+        }
+    }
+    
+    &__production-content {
+    }
+
+    &__production-content-item {
+        position: absolute;
+        display: none;
+        
+        &.active {
+            position: relative;
+            display: flex;
+        }
+    }
+
+    &__production-content-block {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+    }
+
+    &__production-content-text {
+        width: 750px;
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 36px;
+    }
+
+    &__production-list {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 185px 20px 62px 20px;
+        background-image: url("../img/about-us/production.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 37px;
+    }
+
+    &__production-item {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        width: 374px;
+        padding-left: 40px;
+
+        &:not(:last-child) {
+            border-right: 1px solid #EFEFEF;
+        }
+    }
+
+    &__achievement-value {
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 72px;
+        color: $black-text;
+        margin-bottom: 16px;
+    }
+
+    &__achievement-text {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    &__serv-link {
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        width: 193px;
+        padding: 16px 3px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+        background-color: #4269f5;
+        border-radius: 8px;
+        margin-bottom: 100px;
+    }
+
+    /*---------------requisite----------------*/
+    &__requisites {
+        padding-bottom: 30px;
+    }
+
+    &__requisites-title {
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 44px;
+        color: $black-text;
+        margin-bottom: 41px;
+    }
+
+    &__requisites-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 760px;
+        gap: 21px;
+        padding-bottom: 10px;
+    }
+
+    &__requisites-item {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        width: 360px;
+    }
+
+    &__requisites-name {
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 14px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: rgba(137, 141, 150, 1);
+        margin-bottom: 7px;
+    }
+
+    &__requisites-value {
+        font-size: 16px;
+        line-height: 26px;
     }
 }
