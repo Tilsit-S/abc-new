@@ -8,7 +8,7 @@
         font-size: 32px;
         line-height: 44px;
         color: $black-text;
-        margin-bottom: 38px;
+        margin-bottom: 40px;
     }
 
     &__tabs {
@@ -16,7 +16,7 @@
         justify-content: flex-start;
         color: #44454B;
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 38px;
     }   
         
     &__tabs-item {
@@ -44,6 +44,7 @@
     }
     
     &__content {
+        margin-bottom: 98px;
     }
 
     &__content-item {
@@ -54,5 +55,116 @@
             position: relative;
             display: flex;
         }
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        gap: 37px;
+    }
+
+    &__item {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        width: 560px;
+    }
+
+    &__image {
+        margin-right: 24px;
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 34px;
+        color: $black-text;
+        margin-bottom: 16px;
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /*-------------------tabs---------------------*/
+    &__tabs {
+        display: flex;
+        justify-content: flex-start;
+        color: #44454B;
+        text-align: center;
+        margin-bottom: 38px;
+    }   
+        
+    &__tabs-item {
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        background: #F2F3F5;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        
+        &:not(:last-child) {
+            margin-right: 13px;
+        }
+        
+        &.active {
+            background: #090A12;
+            color: $white;
+        }
+    }
+    
+    &__content {
+        margin-bottom: 98px;
+    }
+
+    &__content-item {
+        position: absolute;
+        display: none;
+        
+        &.active {
+            position: relative;
+            display: flex;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        gap: 37px;
+    }
+
+    &__item {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        width: 560px;
+    }
+
+    &__image {
+        margin-right: 24px;
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 34px;
+        color: $black-text;
+        margin-bottom: 16px;
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 26px;
     }
 }
